@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: rgb(23, 24, 26);
+}
+
+
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* min-height 100% экрана */
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10px 30px;
+  border-radius: 15px;
+  /* border: 1px solid rgb(255, 255, 255); */
+}
+
+.main-content {
+  flex: 1; /* Занимает все доступное пространство */
+}
+
+.title {
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.date {
+  color: #ffffff;
+  text-align: center;
+}
+
+.loading {
+  height: 20px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form-input {
+  width: 290px;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  background-color: rgb(41, 42, 46);
+  border-radius: 100px;
+  border: 1px solid rgb(171, 171, 171);
+  transition: all ease-in 0.2s;
+}
+
+.form-input:hover {
+  border: 1px solid rgba(255, 255, 255);
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.form-input__amount {
+  width: 260px;
+}
+
+.arrowToBack {
+  width: 20px;
+  padding: 0.1rem 0.4rem;
+  background-color: rgb(255, 255, 255, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all ease-in 0.3s;
+}
+
+.arrowToBack:hover {
+  background-color: #ffffff;
+}
+
+.list {
+  position: absolute;
+  height: 270px;
+  padding: 10px 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  top: 45px;
+  overflow: scroll;
+  z-index: 10;
+}
+
+.list li {
+  font-size: 0.8rem;
+  list-style: none;
+  background-color: #f5f5f5;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all ease-in-out 5ms;
+}
+
+.list li:hover {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: #969696;
+
+}
+
+.inp-wrapper {
+  position: relative;
+}
+
+.inp-icon {
+  position: absolute;
+  z-index: 10;
+  top: 0px;
+  right: 0px;
+  padding-top: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  /* border: 1px solid red; */
+}
+
+.result {
+  max-width: 400px;
+  margin: 20px auto;
+  color: rgb(0, 56, 239);
+  text-align: center;
+}
+
+.header {
+  padding: 20px;
+  border-bottom: 2px solid white;
+}
+
+.header a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: all ease-in 0.2s;
+}
+
+.header a:hover {
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  margin-top: auto; /* Прижимает футер вниз */
+  padding: 20px 0;
+  border-top: 2px solid white;
+}
+
+.footer a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all ease-in 0.2s;
+}
+
+.footer a:hover {
+  transform: scale(1.05);
+  text-decoration: underline;
+}
