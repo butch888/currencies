@@ -138,7 +138,8 @@ body {
 .result {
   max-width: 400px;
   margin: 20px auto;
-  color: rgb(0, 56, 239);
+  color: white;
+  font-size: 1.5rem;
   text-align: center;
 }
 
